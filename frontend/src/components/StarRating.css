@@ -1,0 +1,46 @@
+/* Yıldız puanlama bileşeni kapsayıcısı */
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* sola hizalı */
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 8px;
+  padding-left: 0; /* gerekirse 0 yap */
+}
+
+/* Yıldızların dış çerçevesi (boş yıldızlar) */
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Yıldızların iç kısmı (doluluk oranı) */
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFD700; /* gold */
+  width: 0;
+}
+
+/* 5 yıldız karakteri hem dış hem iç için */
+.stars-outer::before,
+.stars-inner::before {
+  content: '★★★★★';
+}
+
+/* Skor yazısı */
+.rating-score {
+  font-size: 13px;
+  color: #333;
+  font-family: 'Montserrat';
+  margin-top: 4px;
+  text-align: left;
+}

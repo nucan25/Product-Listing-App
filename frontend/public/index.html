@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Product Listing App with custom fonts and color picker"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Product Listing App</title>
+
+    <!-- ✅ Yerel Fontlar -->
+    <link
+      rel="preload"
+      href="/fonts/Avenir/Avenir-Book.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Montserrat/Montserrat-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <style>
+      @font-face {
+        font-family: 'Avenir';
+        src: url('/fonts/Avenir/Avenir-Book.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Avenir-Medium';
+        src: url('/fonts/Avenir/Avenir-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Montserrat';
+        src: url('/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Montserrat-Medium';
+        src: url('/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

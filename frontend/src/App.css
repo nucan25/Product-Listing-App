@@ -1,0 +1,188 @@
+/* ==================== FONT YÜKLEME ==================== */
+/* Yerel Avenir fontları (public/fonts/Avenir/...) */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../public/fonts/Avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../public/fonts/Avenir/Avenir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../public/fonts/Avenir/Avenir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+/* Yerel Montserrat fontları (public/fonts/Montserrat/...) */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/fonts/Montserrat/Montserrat-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ==================== GENEL STİL ==================== */
+body {
+  font-family: 'Avenir', 'Montserrat', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-size: 14px; /* Taban: Avenir Book 14px */
+  font-weight: 400;
+}
+
+.page-title {
+  font-family: 'Avenir', 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 900;      /* Black */
+  margin: 40px 0 20px 0;
+  text-align: center;
+  padding: 0;
+}
+
+/* Liste konteyneri */
+.product-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+/* Kart yapısı */
+.product-card {
+  width: 250px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* === Ürün Başlığı: Montserrat Medium 15px === */
+.product-name {
+  font-family: 'Montserrat', 'Avenir', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 10px 0 10px;
+}
+
+/* === Ürün Fiyatı: Montserrat Regular 15px === */
+.product-price {
+  font-family: 'Montserrat', 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+/* === Renk (Color) Yazısı: Avenir Book 12px === */
+.product-type {
+  font-family: 'Avenir', 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+/* Renk seçim butonları */
+.color-picker {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 8px 0 6px;
+}
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+.color-btn.yellow { background-color: #E6CA97; }
+.color-btn.white  { background-color: #D9D9D9; }
+.color-btn.rose   { background-color: #E1A4A9; }
+
+.color-btn.selected {
+  outline: 1.5px solid black;
+  outline-offset: 2px;
+  border: none;
+}
+
+/* Yıldızlar ve skor */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFD700;
+  width: 0;
+}
+
+.stars-outer::before,
+.stars-inner::before {
+  content: '★★★★★';
+}
+
+/* === Yıldızların Değeri: Avenir Book 14px === */
+.rating-score {
+  font-size: 14px;
+  font-family: 'Avenir', 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #333;
+  margin-top: 4px;
+}
+
+/* Slick Slider Okları */
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  opacity: 1;
+}
+
+.slick-slide {
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
