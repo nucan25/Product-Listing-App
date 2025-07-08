@@ -35,7 +35,7 @@ function App() {
 
   // --- Ürünleri backend'den çek ---
   useEffect(() => {
-    axios.get('http://localhost:3001/products')
+    axios.get('https://product-listing-app-fs4y.onrender.com/products')
       .then((res) => setProducts(res.data))
       .catch((err) => console.error("API error:", err));
   }, []);
